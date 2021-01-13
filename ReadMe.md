@@ -1,16 +1,22 @@
 ETL-Project
+
 Group 5 -  Adrian,  Jeremy, Laura
 
 Finding Data
+
 Use 3 sources of data
+
 Data.world -  Netflix Shows Dataset by Chase Willden:
 https://data.world/chasewillden/netflix-shows
+
 New York Times Movie Reviews API:
 https://developer.nytimes.com/docs/movie-reviews-api/1/overview
+
 Open Movie Database: 
 http://www.omdbapi.com
 
 Data Cleanup & Analysis
+
 For our database we wanted to build a library of Netflix Shows and Movies. To build our database we choose Postgress SQL to build our tables and store the final data. We all felt we have a better understanding of Postgress and SQL and the visualization of the tables and columns are easier for us to understand for this short project.  
 Our data sources included a CSV and 2 API calls to build this library. 
 Using SQL we created tables and columns to store our data. 
@@ -20,10 +26,15 @@ Final Report
 
 To recreate our process this files should be run in the following order: 
 Create a Postgress Database called ‘Netflix_db’
+
 Then run the Netflix_db.sql file to set up the schema (tables and columns)  for the database
+
 Netflix_clean.ipynb file to clean and split the starting CSV file which should be stored in the ‘Resources’ folder
+
 Netflix_db_setup.ipynb  file to load the netflix shows and movies into the postgress database
+
 NYT_Reviews.ipynb for connect to the NYT Movie reviews and get review info and load to the postgress database
+
 IMDB_API.ipynb to connect to the OMBD and get additional info for the postgress DB
 
 CSV from Data.World
