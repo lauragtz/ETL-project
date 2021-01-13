@@ -41,6 +41,25 @@ CREATE TABLE ny_times_reviews(
 	link_suggested_link_text TEXT
 );
 
-SELECT * FROM ny_times_reviews
-JOIN netflix_movies 
-ON ny_times_reviews.display_title = netflix_movies.title;
+DROP TABLE OMDB_REVIEWS;
+CREATE TABLE OMDB_REVIEWS(
+	Title TEXT, 
+	Year TEXT, 
+	Rated TEXT, 
+	Released TEXT,
+	Runtime TEXT,
+	Genre TEXT,
+	Director TEXT,
+	Writer TEXT,
+	Actors TEXT,
+	Plot TEXT,
+	Language TEXT,
+	Country TEXT,
+	Awards TEXT,
+	Poster TEXT,
+	Metascore TEXT,
+	imdbRating TEXT,
+	imdbVotes TEXT,
+	imdbID TEXT
+	);
+	
